@@ -45,6 +45,9 @@
                 "strategy": {
                     "type": "Source",
                     "sourceStrategy": {
+						"env": [
+							{"name": "JUPYTER_INSTALL_LAB", "value": "true"}
+						],
                         "from": {
                             "kind": "DockerImage",
                             "name": "centos/python-35-centos7:latest"
